@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>Aman Bala | Personal Website</title>
+  <style>
+    :root{--bg:#090909;--panel:#121212;--gold:#d6b36a;--muted:#aaa;--white:#f5f2eb}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--white);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1080px,90%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:rgba(9,9,9,.88);backdrop-filter:blur(12px);border-bottom:1px solid #252525}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:800;letter-spacing:2px}.brand span{color:var(--gold)}
+    .navlinks{display:flex;gap:28px;color:#ccc;font-size:14px}
+    .navlinks a:hover{color:var(--gold)}
+    .hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:90px 0 75px;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(214,179,106,.13),transparent 68%);top:0;left:50%;transform:translateX(-50%);pointer-events:none}
+    .hero-inner{position:relative}
+    .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:4px;font-size:12px;font-weight:700}
+    h1{font-size:clamp(48px,9vw,96px);line-height:1.03;letter-spacing:-3px;margin:22px 0}
+    h1 span{color:var(--gold)}
+    .hero p{max-width:590px;margin:0 auto;color:var(--muted);font-size:17px}
+    .actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+    .btn{padding:13px 22px;border:1px solid var(--gold);border-radius:3px;font-size:13px;font-weight:700;letter-spacing:.5px;transition:.2s}
+    .btn.primary{background:var(--gold);color:#111}.btn:hover{transform:translateY(-2px);background:#e6c783;color:#111}
+    section{padding:78px 0;border-top:1px solid #222}
+    .section-tag{color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:3px;font-weight:700}
+    h2{font-size:clamp(30px,5vw,46px);margin:10px 0 24px;letter-spacing:-1px}
+    .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+    .about-copy{color:var(--muted);max-width:620px}
+    .about-copy p+p{margin-top:14px}
+    .profile-card{border:1px solid #393124;background:linear-gradient(145deg,#171512,#0e0e0e);padding:34px;min-height:230px;display:flex;flex-direction:column;justify-content:space-between}
+    .monogram{font-size:62px;line-height:1;font-weight:800;color:var(--gold);letter-spacing:-4px}
+    .profile-card small{color:var(--muted);letter-spacing:2px;text-transform:uppercase}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--panel);border:1px solid #292929;padding:25px;min-height:155px}
+    .card .num{color:var(--gold);font-size:12px;letter-spacing:2px}
+    .card h3{margin:15px 0 8px;font-size:18px}
+    .card p{color:var(--muted);font-size:14px}
+    .contact{background:linear-gradient(120deg,#17140e,#0d0d0d);border:1px solid #40351f;padding:38px;text-align:center}
+    .contact p{color:var(--muted);max-width:540px;margin:0 auto 22px}
+    footer{padding:25px 0;color:#777;font-size:12px;text-align:center;border-top:1px solid #222}
+    @media(max-width:700px){.navlinks{gap:13px;font-size:12px}.about-grid,.cards{grid-template-columns:1fr}.hero{min-height:70vh}h1{letter-spacing:-2px}.profile-card{min-height:190px}section{padding:60px 0}}
+    @media(max-width:420px){.navlinks{gap:9px}.navlinks a{font-size:11px}.brand{font-size:13px}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#home">AMAN<span>.</span></a>
+      <div class="navlinks">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#interests">Interests</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner wrap">
+        <div class="eyebrow">Welcome to my personal website</div>
+        <h1>AMAN <span>BALA</span></h1>
+        <p>A personal space to share who I am, what I’m interested in, and what I’m working towards.</p>
+        <div class="actions">
+          <a class="btn primary" href="#about">DISCOVER MORE</a>
+          <a class="btn" href="#contact">GET IN TOUCH</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about-grid">
+        <div>
+          <div class="section-tag">A little introduction</div>
+          <h2>About Me</h2>
+          <div class="about-copy">
+            <p>Hi, I’m Aman Bala. Welcome to my corner of the internet.</p>
+            <p>This website is where I can introduce myself, share my interests, and add new projects and achievements as I grow. Thanks for stopping by.</p>
+          </div>
+        </div>
+        <div class="profile-card">
+          <div class="monogram">AB.</div>
+          <small>Personal space · Since 2026</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="interests">
+      <div class="wrap">
+        <div class="section-tag">What matters to me</div>
+        <h2>My Interests</h2>
+        <div class="cards">
+          <article class="card"><div class="num">01 / LEARN</div><h3>Learning</h3><p>Always curious and open to learning useful new skills.</p></article>
+          <article class="card"><div class="num">02 / CREATE</div><h3>Creating</h3><p>Exploring ideas and turning inspiration into something real.</p></article>
+          <article class="card"><div class="num">03 / GROW</div><h3>Growing</h3><p>Taking small steps, improving every day, and moving forward.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact">
+          <div class="section-tag">Let's connect</div>
+          <h2>Thanks for visiting.</h2>
+          <p>Want to connect? Add your preferred email or social media links here when you’re ready.</p>
+          <a class="btn primary" href="#home">BACK TO TOP ↑</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Aman Bala · Made with care</footer>
+</body>
+</html>
